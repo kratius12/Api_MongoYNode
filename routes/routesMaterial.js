@@ -27,7 +27,7 @@ const service = new materialService;
         const result = await service.add(req.body);
         if(result){
             res.status(200).json({
-                message:`Se agregó un material con el id: ${id}`
+                message:`Se agregó un material`
             })
         }else{
             res.status(404).send('Error al intentar insertar materiales')
